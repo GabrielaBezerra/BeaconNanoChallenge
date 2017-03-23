@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1478461E1E83FF790025A0FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1478461D1E83FF790025A0FA /* AppDelegate.swift */; };
+		147846201E83FF790025A0FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1478461F1E83FF790025A0FA /* ViewController.swift */; };
+		147846231E83FF790025A0FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147846211E83FF790025A0FA /* Main.storyboard */; };
+		147846251E83FF790025A0FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 147846241E83FF790025A0FA /* Assets.xcassets */; };
+		147846281E83FF790025A0FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147846261E83FF790025A0FA /* LaunchScreen.storyboard */; };
+		147846331E83FF790025A0FA /* BeaconNanoChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147846321E83FF790025A0FA /* BeaconNanoChallengeTests.swift */; };
+		1478463E1E83FF790025A0FA /* BeaconNanoChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1478463D1E83FF790025A0FA /* BeaconNanoChallengeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1478462F1E83FF790025A0FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 147846121E83FF790025A0FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 147846191E83FF790025A0FA;
+			remoteInfo = BeaconNanoChallenge;
+		};
+		1478463A1E83FF790025A0FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 147846121E83FF790025A0FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 147846191E83FF790025A0FA;
+			remoteInfo = BeaconNanoChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1478461A1E83FF790025A0FA /* BeaconNanoChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeaconNanoChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1478461D1E83FF790025A0FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1478461F1E83FF790025A0FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		147846221E83FF790025A0FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		147846241E83FF790025A0FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		147846271E83FF790025A0FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		147846291E83FF790025A0FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1478462E1E83FF790025A0FA /* BeaconNanoChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeaconNanoChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		147846321E83FF790025A0FA /* BeaconNanoChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconNanoChallengeTests.swift; sourceTree = "<group>"; };
+		147846341E83FF790025A0FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		147846391E83FF790025A0FA /* BeaconNanoChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeaconNanoChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1478463D1E83FF790025A0FA /* BeaconNanoChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconNanoChallengeUITests.swift; sourceTree = "<group>"; };
+		1478463F1E83FF790025A0FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		147846171E83FF790025A0FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1478462B1E83FF790025A0FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147846361E83FF790025A0FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		147846111E83FF790025A0FA = {
+			isa = PBXGroup;
+			children = (
+				1478461C1E83FF790025A0FA /* BeaconNanoChallenge */,
+				147846311E83FF790025A0FA /* BeaconNanoChallengeTests */,
+				1478463C1E83FF790025A0FA /* BeaconNanoChallengeUITests */,
+				1478461B1E83FF790025A0FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1478461B1E83FF790025A0FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1478461A1E83FF790025A0FA /* BeaconNanoChallenge.app */,
+				1478462E1E83FF790025A0FA /* BeaconNanoChallengeTests.xctest */,
+				147846391E83FF790025A0FA /* BeaconNanoChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1478461C1E83FF790025A0FA /* BeaconNanoChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				1478461D1E83FF790025A0FA /* AppDelegate.swift */,
+				1478461F1E83FF790025A0FA /* ViewController.swift */,
+				147846211E83FF790025A0FA /* Main.storyboard */,
+				147846241E83FF790025A0FA /* Assets.xcassets */,
+				147846261E83FF790025A0FA /* LaunchScreen.storyboard */,
+				147846291E83FF790025A0FA /* Info.plist */,
+			);
+			path = BeaconNanoChallenge;
+			sourceTree = "<group>";
+		};
+		147846311E83FF790025A0FA /* BeaconNanoChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				147846321E83FF790025A0FA /* BeaconNanoChallengeTests.swift */,
+				147846341E83FF790025A0FA /* Info.plist */,
+			);
+			path = BeaconNanoChallengeTests;
+			sourceTree = "<group>";
+		};
+		1478463C1E83FF790025A0FA /* BeaconNanoChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1478463D1E83FF790025A0FA /* BeaconNanoChallengeUITests.swift */,
+				1478463F1E83FF790025A0FA /* Info.plist */,
+			);
+			path = BeaconNanoChallengeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		147846191E83FF790025A0FA /* BeaconNanoChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 147846421E83FF790025A0FA /* Build configuration list for PBXNativeTarget "BeaconNanoChallenge" */;
+			buildPhases = (
+				147846161E83FF790025A0FA /* Sources */,
+				147846171E83FF790025A0FA /* Frameworks */,
+				147846181E83FF790025A0FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeaconNanoChallenge;
+			productName = BeaconNanoChallenge;
+			productReference = 1478461A1E83FF790025A0FA /* BeaconNanoChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1478462D1E83FF790025A0FA /* BeaconNanoChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 147846451E83FF790025A0FA /* Build configuration list for PBXNativeTarget "BeaconNanoChallengeTests" */;
+			buildPhases = (
+				1478462A1E83FF790025A0FA /* Sources */,
+				1478462B1E83FF790025A0FA /* Frameworks */,
+				1478462C1E83FF790025A0FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				147846301E83FF790025A0FA /* PBXTargetDependency */,
+			);
+			name = BeaconNanoChallengeTests;
+			productName = BeaconNanoChallengeTests;
+			productReference = 1478462E1E83FF790025A0FA /* BeaconNanoChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		147846381E83FF790025A0FA /* BeaconNanoChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 147846481E83FF790025A0FA /* Build configuration list for PBXNativeTarget "BeaconNanoChallengeUITests" */;
+			buildPhases = (
+				147846351E83FF790025A0FA /* Sources */,
+				147846361E83FF790025A0FA /* Frameworks */,
+				147846371E83FF790025A0FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1478463B1E83FF790025A0FA /* PBXTargetDependency */,
+			);
+			name = BeaconNanoChallengeUITests;
+			productName = BeaconNanoChallengeUITests;
+			productReference = 147846391E83FF790025A0FA /* BeaconNanoChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		147846121E83FF790025A0FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Gabriela Bezerra";
+				TargetAttributes = {
+					147846191E83FF790025A0FA = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 526YR6WHWC;
+						ProvisioningStyle = Automatic;
+					};
+					1478462D1E83FF790025A0FA = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 526YR6WHWC;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 147846191E83FF790025A0FA;
+					};
+					147846381E83FF790025A0FA = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 526YR6WHWC;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 147846191E83FF790025A0FA;
+					};
+				};
+			};
+			buildConfigurationList = 147846151E83FF790025A0FA /* Build configuration list for PBXProject "BeaconNanoChallenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 147846111E83FF790025A0FA;
+			productRefGroup = 1478461B1E83FF790025A0FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				147846191E83FF790025A0FA /* BeaconNanoChallenge */,
+				1478462D1E83FF790025A0FA /* BeaconNanoChallengeTests */,
+				147846381E83FF790025A0FA /* BeaconNanoChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		147846181E83FF790025A0FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				147846281E83FF790025A0FA /* LaunchScreen.storyboard in Resources */,
+				147846251E83FF790025A0FA /* Assets.xcassets in Resources */,
+				147846231E83FF790025A0FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1478462C1E83FF790025A0FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147846371E83FF790025A0FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		147846161E83FF790025A0FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				147846201E83FF790025A0FA /* ViewController.swift in Sources */,
+				1478461E1E83FF790025A0FA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1478462A1E83FF790025A0FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				147846331E83FF790025A0FA /* BeaconNanoChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147846351E83FF790025A0FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1478463E1E83FF790025A0FA /* BeaconNanoChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		147846301E83FF790025A0FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 147846191E83FF790025A0FA /* BeaconNanoChallenge */;
+			targetProxy = 1478462F1E83FF790025A0FA /* PBXContainerItemProxy */;
+		};
+		1478463B1E83FF790025A0FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 147846191E83FF790025A0FA /* BeaconNanoChallenge */;
+			targetProxy = 1478463A1E83FF790025A0FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		147846211E83FF790025A0FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				147846221E83FF790025A0FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		147846261E83FF790025A0FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				147846271E83FF790025A0FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		147846401E83FF790025A0FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		147846411E83FF790025A0FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		147846431E83FF790025A0FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 526YR6WHWC;
+				INFOPLIST_FILE = BeaconNanoChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Gabriela-Bezerra.BeaconNanoChallenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		147846441E83FF790025A0FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 526YR6WHWC;
+				INFOPLIST_FILE = BeaconNanoChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Gabriela-Bezerra.BeaconNanoChallenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		147846461E83FF790025A0FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 526YR6WHWC;
+				INFOPLIST_FILE = BeaconNanoChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Gabriela-Bezerra.BeaconNanoChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeaconNanoChallenge.app/BeaconNanoChallenge";
+			};
+			name = Debug;
+		};
+		147846471E83FF790025A0FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 526YR6WHWC;
+				INFOPLIST_FILE = BeaconNanoChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Gabriela-Bezerra.BeaconNanoChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeaconNanoChallenge.app/BeaconNanoChallenge";
+			};
+			name = Release;
+		};
+		147846491E83FF790025A0FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 526YR6WHWC;
+				INFOPLIST_FILE = BeaconNanoChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Gabriela-Bezerra.BeaconNanoChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = BeaconNanoChallenge;
+			};
+			name = Debug;
+		};
+		1478464A1E83FF790025A0FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 526YR6WHWC;
+				INFOPLIST_FILE = BeaconNanoChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Gabriela-Bezerra.BeaconNanoChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = BeaconNanoChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		147846151E83FF790025A0FA /* Build configuration list for PBXProject "BeaconNanoChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				147846401E83FF790025A0FA /* Debug */,
+				147846411E83FF790025A0FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		147846421E83FF790025A0FA /* Build configuration list for PBXNativeTarget "BeaconNanoChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				147846431E83FF790025A0FA /* Debug */,
+				147846441E83FF790025A0FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		147846451E83FF790025A0FA /* Build configuration list for PBXNativeTarget "BeaconNanoChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				147846461E83FF790025A0FA /* Debug */,
+				147846471E83FF790025A0FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		147846481E83FF790025A0FA /* Build configuration list for PBXNativeTarget "BeaconNanoChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				147846491E83FF790025A0FA /* Debug */,
+				1478464A1E83FF790025A0FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 147846121E83FF790025A0FA /* Project object */;
+}
