@@ -8,79 +8,72 @@
 
 import UIKit
 import CoreLocation
-import KontaktSDK
 
 class ViewController: UIViewController {
-    @IBOutlet weak var label: UILabel!
     
-    var beaconManager: KTKBeaconManager!
+    let locationManager = CLLocationManager()
     
-    //let myProximityUuid = UUID(uuidString: "E063A66C-146F-42B1-AC3C-36BA3640B7ED")
+    let region = CLBeaconRegion(proximityUUID: UUID(uuidString: "F7826DA6-4FA2-4E98-8024-BC5B71E0893E")!, identifier: "Bacon")
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        beaconManager = KTKBeaconManager(delegate: self)
-      
-        beaconManager.stopMonitoringForAllRegions()
-    
-        switch KTKBeaconManager.locationAuthorizationStatus() {
-        case .notDetermined:
-            beaconManager.requestLocationAlwaysAuthorization()
-        case .authorizedAlways: break
-        case .denied, .restricted: break
-        case .authorizedWhenInUse: break
+        
+        locationManager.delegate = self
+        
+        if (CLLocationManager.authorizationStatus() != CLAuthorizationStatus.authorizedWhenInUse){
+            locationManager.requestWhenInUseAuthorization()
         }
-
+        
+        locationManager.startRangingBeacons(in: region)
+        
     }
     
 }
 
-extension ViewController: KTKBeaconManagerDelegate {
+extension ViewController: CLLocationManagerDelegate {
     
-    func beaconManager(_ manager: KTKBeaconManager, didChangeLocationAuthorizationStatus status: CLAuthorizationStatus) {
-
-        let myProximityUuid = UUID(uuidString: "A1EA8130-0E1B-D4A1-B840-63F88C8DA1EA")
-        let region = KTKBeaconRegion(proximityUUID: myProximityUuid!, identifier: "Bacon")
+    func locationManager(_ manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], in region: CLBeaconRegion) {
         
-        if status == .authorizedAlways {
-            if KTKBeaconManager.isMonitoringAvailable() {
-                beaconManager.startMonitoring(for: region)
+        let immediateBeacons    = beacons.filter{ $0.proximity == CLProximity.immediate}
+        let nearBeacons         = beacons.filter{ $0.proximity == CLProximity.near}
+        let farBeacons          = beacons.filter{ $0.proximity == CLProximity.far}
+        let unknownBeacons      = beacons.filter{ $0.proximity == CLProximity.unknown}
+        
+        print("\n\n------------------")
+        print("Ranged beacons: \(beacons.count)")
+        
+        print("\nHigh signal: \(immediateBeacons.count + nearBeacons.count)")
+        
+        if immediateBeacons.count != 0 {
+            print("\nImmedate Beacons")
+            for beacon in immediateBeacons {
+                print(beacon)
+            }
+        }
+        
+        if nearBeacons.count != 0 {
+            print("\nNear Beacons")
+            for beacon in nearBeacons {
+                print(beacon)
+            }
+        }
+        
+        
+        print("\nLow signal: \(farBeacons.count + unknownBeacons.count)")
+        
+        if farBeacons.count != 0 {
+            print("\nFar Beacons")
+            for beacon in farBeacons {
+                print(beacon)
+            }
+        }
+        
+        if unknownBeacons.count != 0 {
+            print("\nUnknown Beacons")
+            for beacon in unknownBeacons {
+                print(beacon)
             }
         }
     }
- 
     
-    func beaconManager(_ manager: KTKBeaconManager, didStartMonitoringFor region: KTKBeaconRegion) {
-        
-        label.text = "Monitoring..."
-        print("Started Monitoring the following regions:")
-        print(beaconManager.monitoredRegions)
-        
-    }
-    
-    func beaconManager(_ manager: KTKBeaconManager, monitoringDidFailFor region: KTKBeaconRegion?, withError error: Error?) {
-        print("failed")
-        label.text = "Failed"
-    }
-    
-    func beaconManager(_ manager: KTKBeaconManager, didEnter region: KTKBeaconRegion) {
-        manager.startRangingBeacons(in: region)
-        print("Entered region")
-        label.text = "Entered region \(region)"
-    }
-    
-    func beaconManager(_ manager: KTKBeaconManager, didExitRegion region: KTKBeaconRegion) {
-        manager.stopRangingBeacons(in: region)
-        print("Left Region")
-        label.text = "Left region \(region)"
-    }
-    
-    func beaconManager(_ manager: KTKBeaconManager, didRangeBeacons beacons: [CLBeacon], in region: KTKBeaconRegion) {
-        print("did range beacons:\n \(beacons)")
-    }
-    
-    func beaconManager(_ manager: KTKBeaconManager, rangingBeaconsDidFailFor region: KTKBeaconRegion?, withError error: Error?) {
-        print(region!)
-        print("Failed")
-    }
 }
