@@ -15,14 +15,8 @@ minor: 42240
 # TODO
 
 - [x] Verificar iBeacons
-
-IslasGiga
-- [ ] Tela 
-
-Marcus Reuber
+- [ ] Telas 
 - [ ] Enviar/Receber sinais
-
-Gabi
 - [ ] Verificar se dispositivo está entre iBeacons. Se sim, enviar sinal. 
 - [ ] Se não estiver entre os iBeacons (verificar 5 vezes) notifica todos os outros dispositivos que estão entre os iBeacons.
 
