@@ -55,6 +55,7 @@ extension ViewController: KTKBeaconManagerDelegate {
         label.text = "Monitoring..."
         print("Started Monitoring the following regions:")
         print(beaconManager.monitoredRegions)
+        
     }
     
     func beaconManager(_ manager: KTKBeaconManager, monitoringDidFailFor region: KTKBeaconRegion?, withError error: Error?) {
@@ -63,16 +64,12 @@ extension ViewController: KTKBeaconManagerDelegate {
     }
     
     func beaconManager(_ manager: KTKBeaconManager, didEnter region: KTKBeaconRegion) {
-        // Decide what to do when a user enters a range of your region; usually used
-        // for triggering a local notification and/or starting a beacon ranging
         manager.startRangingBeacons(in: region)
         print("Entered region")
         label.text = "Entered region \(region)"
     }
     
     func beaconManager(_ manager: KTKBeaconManager, didExitRegion region: KTKBeaconRegion) {
-        // Decide what to do when a user exits a range of your region; usually used
-        // for triggering a local notification and stoping a beacon ranging
         manager.stopRangingBeacons(in: region)
         print("Left Region")
         label.text = "Left region \(region)"
