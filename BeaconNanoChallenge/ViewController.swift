@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreLocation
+import MultipeerConnectivity
 
 class ViewController: UIViewController {
     
@@ -26,6 +27,15 @@ class ViewController: UIViewController {
         
         locationManager.startRangingBeacons(in: region)
         
+        
+        // Multipeer
+        let browser = MCNearbyServiceBrowser.init(peer: peerID, serviceType: serviceType)
+        browser.delegate = self
+        
+        let advertiser = MCNearbyServiceAdvertiser.init(peer: peerID, discoveryInfo: nil, serviceType: serviceType)
+        advertiser.delegate = self
+
+        
     }
     
 }
@@ -33,6 +43,18 @@ class ViewController: UIViewController {
 extension ViewController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], in region: CLBeaconRegion) {
+        print("beacon ranged")
+        let immediateBeacons = beacons.filter{ $0.proximity == CLProximity.immediate }
+        let nearBeacons      = beacons.filter{ $0.proximity == CLProximity.near }
+        
+        
+        if((immediateBeacons.count + nearBeacons.count) >= 3){
+            
+        }
+    }
+    
+    //Checking all beacons and printing to console
+    /*func locationManager(_ manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], in region: CLBeaconRegion) {
         
         let immediateBeacons    = beacons.filter{ $0.proximity == CLProximity.immediate}
         let nearBeacons         = beacons.filter{ $0.proximity == CLProximity.near}
@@ -74,6 +96,29 @@ extension ViewController: CLLocationManagerDelegate {
                 print(beacon)
             }
         }
+    }*/
+    
+}
+
+extension ViewController: MCNearbyServiceBrowserDelegate, MCNearbyServiceAdvertiserDelegate {
+    
+    func advertiser(_ advertiser: MCNearbyServiceAdvertiser, didReceiveInvitationFromPeer peerID: MCPeerID, withContext context: Data?, invitationHandler: @escaping (Bool, MCSession?) -> Void) {
+        
     }
     
+    func advertiser(_ advertiser: MCNearbyServiceAdvertiser, didNotStartAdvertisingPeer error: Error) {
+        
+    }
+    
+    func browser(_ browser: MCNearbyServiceBrowser, foundPeer peerID: MCPeerID, withDiscoveryInfo info: [String : String]?) {
+        
+    }
+    
+    func browser(_ browser: MCNearbyServiceBrowser, lostPeer peerID: MCPeerID) {
+        
+    }
+    
+    func browser(_ browser: MCNearbyServiceBrowser, didNotStartBrowsingForPeers error: Error) {
+        
+    }
 }
