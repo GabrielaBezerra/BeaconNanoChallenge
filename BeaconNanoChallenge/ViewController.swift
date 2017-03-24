@@ -22,17 +22,11 @@ class ViewController: UIViewController {
         beaconManager = KTKBeaconManager(delegate: self)
       
         beaconManager.stopMonitoringForAllRegions()
-        
-        let myProximityUuid = UUID(uuidString: "F7826DA6-4FA2-4E98-8024-BC5B71E0893E")
-        let region = KTKBeaconRegion(proximityUUID: myProximityUuid!, identifier: "Beacon region 1")
-        
+    
         switch KTKBeaconManager.locationAuthorizationStatus() {
         case .notDetermined:
             beaconManager.requestLocationAlwaysAuthorization()
-        case .authorizedAlways:
-            if KTKBeaconManager.isMonitoringAvailable() {
-                beaconManager.startMonitoring(for: region)
-            }
+        case .authorizedAlways: break
         case .denied, .restricted: break
         case .authorizedWhenInUse: break
         }
@@ -43,10 +37,10 @@ class ViewController: UIViewController {
 
 extension ViewController: KTKBeaconManagerDelegate {
     
- /*   func beaconManager(_ manager: KTKBeaconManager, didChangeLocationAuthorizationStatus status: CLAuthorizationStatus) {
+    func beaconManager(_ manager: KTKBeaconManager, didChangeLocationAuthorizationStatus status: CLAuthorizationStatus) {
 
         let myProximityUuid = UUID(uuidString: "A1EA8130-0E1B-D4A1-B840-63F88C8DA1EA")
-        let region = KTKBeaconRegion(proximityUUID: myProximityUuid!, identifier: "Beacon region 1")
+        let region = KTKBeaconRegion(proximityUUID: myProximityUuid!, identifier: "Bacon")
         
         if status == .authorizedAlways {
             if KTKBeaconManager.isMonitoringAvailable() {
@@ -54,7 +48,7 @@ extension ViewController: KTKBeaconManagerDelegate {
             }
         }
     }
- */
+ 
     
     func beaconManager(_ manager: KTKBeaconManager, didStartMonitoringFor region: KTKBeaconRegion) {
         
@@ -73,7 +67,7 @@ extension ViewController: KTKBeaconManagerDelegate {
         // for triggering a local notification and/or starting a beacon ranging
         manager.startRangingBeacons(in: region)
         print("Entered region")
-        label.text = "Entered  \(region)"
+        label.text = "Entered region \(region)"
     }
     
     func beaconManager(_ manager: KTKBeaconManager, didExitRegion region: KTKBeaconRegion) {
@@ -81,11 +75,11 @@ extension ViewController: KTKBeaconManagerDelegate {
         // for triggering a local notification and stoping a beacon ranging
         manager.stopRangingBeacons(in: region)
         print("Left Region")
-        label.text = "Left \(region)"
+        label.text = "Left region \(region)"
     }
     
     func beaconManager(_ manager: KTKBeaconManager, didRangeBeacons beacons: [CLBeacon], in region: KTKBeaconRegion) {
-        print("didRange")
+        print("did range beacons:\n \(beacons)")
     }
     
     func beaconManager(_ manager: KTKBeaconManager, rangingBeaconsDidFailFor region: KTKBeaconRegion?, withError error: Error?) {
