@@ -13,8 +13,12 @@ import MultipeerConnectivity
 class ViewController: UIViewController {
     
     let locationManager = CLLocationManager()
-    
+
     let region = CLBeaconRegion(proximityUUID: UUID(uuidString: "F7826DA6-4FA2-4E98-8024-BC5B71E0893E")!, identifier: "Bacon")
+    
+    //Multipeer
+    let peerID = MCPeerID(displayName: UIDevice.current.name)
+    let serviceType = "nano"
     
     override func viewDidLoad() {
         super.viewDidLoad()
