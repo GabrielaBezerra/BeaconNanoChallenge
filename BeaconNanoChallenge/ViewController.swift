@@ -10,20 +10,30 @@ import UIKit
 import CoreLocation
 import MultipeerConnectivity
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var devicesTable: UITableView!
     let locationManager = CLLocationManager()
 
+    @IBOutlet weak var lblNumberOfDevices: UILabel!
     let region = CLBeaconRegion(proximityUUID: UUID(uuidString: "F7826DA6-4FA2-4E98-8024-BC5B71E0893E")!, identifier: "Bacon")
     
     //Multipeer
     let peerID = MCPeerID(displayName: UIDevice.current.name)
     let serviceType = "nano"
     
+    let devices = ["Fulano", "Beltrano", "Teobaldo", "Iphone de Derpino", "iPad do Doidim lá", "Sem ideia"]
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         locationManager.delegate = self
+        devicesTable.delegate = self
+        devicesTable.dataSource = self
+        
+        lblNumberOfDevices.text = "\(devices.count)"
         
         if (CLLocationManager.authorizationStatus() != CLAuthorizationStatus.authorizedWhenInUse){
             locationManager.requestWhenInUseAuthorization()
@@ -38,7 +48,7 @@ class ViewController: UIViewController {
         
         let advertiser = MCNearbyServiceAdvertiser.init(peer: peerID, discoveryInfo: nil, serviceType: serviceType)
         advertiser.delegate = self
-
+        
         
     }
     
@@ -125,4 +135,25 @@ extension ViewController: MCNearbyServiceBrowserDelegate, MCNearbyServiceAdverti
     func browser(_ browser: MCNearbyServiceBrowser, didNotStartBrowsingForPeers error: Error) {
         
     }
+    
+
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return devices.count
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        
+        let cell = UITableViewCell(style: .default, reuseIdentifier: "myCell")
+        cell.textLabel?.text = devices[indexPath.row]
+        
+        return cell
+    }
+    
+    
 }
