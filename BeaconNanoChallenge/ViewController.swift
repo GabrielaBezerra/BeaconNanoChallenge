@@ -13,6 +13,7 @@ import MultipeerConnectivity
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    
     @IBOutlet weak var viewLoading: UIView!
     @IBOutlet weak var devicesTable: UITableView!
     let locationManager = CLLocationManager()
@@ -31,7 +32,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        showActivityIndicatory(uiView: self.viewLoading)
         
         locationManager.delegate = self
         devicesTable.delegate = self
@@ -72,7 +73,23 @@ extension ViewController: CLLocationManagerDelegate {
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
+        if let view = viewLoading{
+            if viewLoading.isHidden{
+                return .lightContent
+            }
+        }
+        return .default
+    }
+    
+    func showActivityIndicatory(uiView: UIView) {
+        var actInd: UIActivityIndicatorView = UIActivityIndicatorView()
+        actInd.frame = CGRect(x: self.view.frame.midX, y: self.view.frame.midX, width: 300, height: 300)
+        actInd.center = uiView.center
+        actInd.hidesWhenStopped = true
+        actInd.activityIndicatorViewStyle =
+            UIActivityIndicatorViewStyle.gray
+        uiView.addSubview(actInd)
+        actInd.startAnimating()
     }
     
     //Checking all beacons and printing to console
