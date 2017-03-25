@@ -6,7 +6,7 @@
 //  Copyright © 2017 Gabriela Bezerra. All rights reserved.
 //
 
-import 
+
 import UIKit
 import CoreLocation
 import MultipeerConnectivity
@@ -31,7 +31,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let animationView =
+        
         
         locationManager.delegate = self
         devicesTable.delegate = self
