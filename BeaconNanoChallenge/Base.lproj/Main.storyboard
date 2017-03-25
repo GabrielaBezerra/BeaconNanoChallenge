@@ -43,20 +43,29 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E8I-wt-DT0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.1030002170138889" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="MiA-0W-ZbG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="23" id="0BO-qA-Q49"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="E8I-wt-DT0" secondAttribute="bottom" id="1wh-dg-K5a"/>
+                            <constraint firstItem="E8I-wt-DT0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GuA-Le-6XC"/>
                             <constraint firstAttribute="trailing" secondItem="99l-5z-bYb" secondAttribute="trailing" id="R4y-Yy-uh6"/>
                             <constraint firstItem="99l-5z-bYb" firstAttribute="top" secondItem="Lm8-L7-QJn" secondAttribute="bottom" constant="8.5" id="Wg6-Ez-vwB"/>
+                            <constraint firstAttribute="trailing" secondItem="E8I-wt-DT0" secondAttribute="trailing" id="c6q-11-NrP"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="99l-5z-bYb" secondAttribute="bottom" id="cxW-v7-nfv"/>
                             <constraint firstAttribute="leadingMargin" secondItem="MiA-0W-ZbG" secondAttribute="leading" id="g5b-r9-Ifm"/>
                             <constraint firstItem="99l-5z-bYb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hkf-QD-7xH"/>
+                            <constraint firstItem="E8I-wt-DT0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="uf9-oI-tZy"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="devicesTable" destination="99l-5z-bYb" id="at0-8Z-VCr"/>
                         <outlet property="lblNumberOfDevices" destination="KGL-bq-Brd" id="Uhr-9a-XGw"/>
+                        <outlet property="viewLoading" destination="E8I-wt-DT0" id="XUj-7h-uXX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -1,0 +1,12 @@
+PODS:
+  - NVActivityIndicatorView (2.9)
+
+DEPENDENCIES:
+  - NVActivityIndicatorView
+
+SPEC CHECKSUMS:
+  NVActivityIndicatorView: 0084f6be71bdf4735b5424ebfb530b1e3db3276c
+
+PODFILE CHECKSUM: 4f127ff768319f6eec96f30b83570485a2b52ea9
+
+COCOAPODS: 1.2.0

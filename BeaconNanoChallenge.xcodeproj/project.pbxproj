@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B592694E97842E62B7E20BB /* Pods_BeaconNanoChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF81075BEC95A56E7A92C4F /* Pods_BeaconNanoChallengeUITests.framework */; };
 		1478461E1E83FF790025A0FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1478461D1E83FF790025A0FA /* AppDelegate.swift */; };
 		147846201E83FF790025A0FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1478461F1E83FF790025A0FA /* ViewController.swift */; };
 		147846231E83FF790025A0FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147846211E83FF790025A0FA /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		147846281E83FF790025A0FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147846261E83FF790025A0FA /* LaunchScreen.storyboard */; };
 		147846331E83FF790025A0FA /* BeaconNanoChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147846321E83FF790025A0FA /* BeaconNanoChallengeTests.swift */; };
 		1478463E1E83FF790025A0FA /* BeaconNanoChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1478463D1E83FF790025A0FA /* BeaconNanoChallengeUITests.swift */; };
+		749705317D209BF07B49C029 /* Pods_BeaconNanoChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036FBCBEF888AB50970FA878 /* Pods_BeaconNanoChallenge.framework */; };
+		A737B3A71CD48382AE1B8633 /* Pods_BeaconNanoChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED459204F30918664918A986 /* Pods_BeaconNanoChallengeTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02C5300956B8D71A21FE74EB /* Pods-BeaconNanoChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeaconNanoChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeaconNanoChallenge/Pods-BeaconNanoChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		036FBCBEF888AB50970FA878 /* Pods_BeaconNanoChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeaconNanoChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1478461A1E83FF790025A0FA /* BeaconNanoChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeaconNanoChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1478461D1E83FF790025A0FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1478461F1E83FF790025A0FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,13 @@
 		147846391E83FF790025A0FA /* BeaconNanoChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeaconNanoChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1478463D1E83FF790025A0FA /* BeaconNanoChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconNanoChallengeUITests.swift; sourceTree = "<group>"; };
 		1478463F1E83FF790025A0FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E848C4213953690C089E005 /* Pods-BeaconNanoChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeaconNanoChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeaconNanoChallenge/Pods-BeaconNanoChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		2BF81075BEC95A56E7A92C4F /* Pods_BeaconNanoChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeaconNanoChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AA041E0AE4B1373C977690F /* Pods-BeaconNanoChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeaconNanoChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeaconNanoChallengeTests/Pods-BeaconNanoChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		8C608CF29A274ACD21DEDF85 /* Pods-BeaconNanoChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeaconNanoChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeaconNanoChallengeUITests/Pods-BeaconNanoChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8F249B1390D861E3250D7346 /* Pods-BeaconNanoChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeaconNanoChallengeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeaconNanoChallengeUITests/Pods-BeaconNanoChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		ED459204F30918664918A986 /* Pods_BeaconNanoChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeaconNanoChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F05C6D9122D05C1310A81D67 /* Pods-BeaconNanoChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeaconNanoChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeaconNanoChallengeTests/Pods-BeaconNanoChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				749705317D209BF07B49C029 /* Pods_BeaconNanoChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A737B3A71CD48382AE1B8633 /* Pods_BeaconNanoChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B592694E97842E62B7E20BB /* Pods_BeaconNanoChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				147846311E83FF790025A0FA /* BeaconNanoChallengeTests */,
 				1478463C1E83FF790025A0FA /* BeaconNanoChallengeUITests */,
 				1478461B1E83FF790025A0FA /* Products */,
+				9C8B7076A7150B5D3F943BFE /* Pods */,
+				BD0492E82481D24FC06DDC55 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +142,29 @@
 			path = BeaconNanoChallengeUITests;
 			sourceTree = "<group>";
 		};
+		9C8B7076A7150B5D3F943BFE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02C5300956B8D71A21FE74EB /* Pods-BeaconNanoChallenge.debug.xcconfig */,
+				1E848C4213953690C089E005 /* Pods-BeaconNanoChallenge.release.xcconfig */,
+				F05C6D9122D05C1310A81D67 /* Pods-BeaconNanoChallengeTests.debug.xcconfig */,
+				6AA041E0AE4B1373C977690F /* Pods-BeaconNanoChallengeTests.release.xcconfig */,
+				8F249B1390D861E3250D7346 /* Pods-BeaconNanoChallengeUITests.debug.xcconfig */,
+				8C608CF29A274ACD21DEDF85 /* Pods-BeaconNanoChallengeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BD0492E82481D24FC06DDC55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				036FBCBEF888AB50970FA878 /* Pods_BeaconNanoChallenge.framework */,
+				ED459204F30918664918A986 /* Pods_BeaconNanoChallengeTests.framework */,
+				2BF81075BEC95A56E7A92C4F /* Pods_BeaconNanoChallengeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 147846421E83FF790025A0FA /* Build configuration list for PBXNativeTarget "BeaconNanoChallenge" */;
 			buildPhases = (
+				D4E8836C7495CEB4897D0181 /* [CP] Check Pods Manifest.lock */,
 				147846161E83FF790025A0FA /* Sources */,
 				147846171E83FF790025A0FA /* Frameworks */,
 				147846181E83FF790025A0FA /* Resources */,
+				083A90B108C33BCE5BE12D84 /* [CP] Embed Pods Frameworks */,
+				9EC24C806109C2A7B2B27061 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 147846451E83FF790025A0FA /* Build configuration list for PBXNativeTarget "BeaconNanoChallengeTests" */;
 			buildPhases = (
+				709BAF19DFD2BDB08C9F2239 /* [CP] Check Pods Manifest.lock */,
 				1478462A1E83FF790025A0FA /* Sources */,
 				1478462B1E83FF790025A0FA /* Frameworks */,
 				1478462C1E83FF790025A0FA /* Resources */,
+				5CBF40F284CBCA8F5049192A /* [CP] Embed Pods Frameworks */,
+				1A6BA31ED73A06C61E226E0B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 147846481E83FF790025A0FA /* Build configuration list for PBXNativeTarget "BeaconNanoChallengeUITests" */;
 			buildPhases = (
+				F622DB1F996B7106DF2478C3 /* [CP] Check Pods Manifest.lock */,
 				147846351E83FF790025A0FA /* Sources */,
 				147846361E83FF790025A0FA /* Frameworks */,
 				147846371E83FF790025A0FA /* Resources */,
+				7D1731710484FF6DF5C4A231 /* [CP] Embed Pods Frameworks */,
+				FF2BCF537AD00C1E988CCB00 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +305,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		083A90B108C33BCE5BE12D84 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeaconNanoChallenge/Pods-BeaconNanoChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1A6BA31ED73A06C61E226E0B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeaconNanoChallengeTests/Pods-BeaconNanoChallengeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CBF40F284CBCA8F5049192A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeaconNanoChallengeTests/Pods-BeaconNanoChallengeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		709BAF19DFD2BDB08C9F2239 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7D1731710484FF6DF5C4A231 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeaconNanoChallengeUITests/Pods-BeaconNanoChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EC24C806109C2A7B2B27061 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeaconNanoChallenge/Pods-BeaconNanoChallenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4E8836C7495CEB4897D0181 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F622DB1F996B7106DF2478C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FF2BCF537AD00C1E988CCB00 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeaconNanoChallengeUITests/Pods-BeaconNanoChallengeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		147846161E83FF790025A0FA /* Sources */ = {
@@ -413,6 +600,7 @@
 		};
 		147846431E83FF790025A0FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02C5300956B8D71A21FE74EB /* Pods-BeaconNanoChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9EGVR395L4;
@@ -426,6 +614,7 @@
 		};
 		147846441E83FF790025A0FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E848C4213953690C089E005 /* Pods-BeaconNanoChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9EGVR395L4;
@@ -439,6 +628,7 @@
 		};
 		147846461E83FF790025A0FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F05C6D9122D05C1310A81D67 /* Pods-BeaconNanoChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -454,6 +644,7 @@
 		};
 		147846471E83FF790025A0FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AA041E0AE4B1373C977690F /* Pods-BeaconNanoChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -469,6 +660,7 @@
 		};
 		147846491E83FF790025A0FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F249B1390D861E3250D7346 /* Pods-BeaconNanoChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 526YR6WHWC;
@@ -483,6 +675,7 @@
 		};
 		1478464A1E83FF790025A0FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C608CF29A274ACD21DEDF85 /* Pods-BeaconNanoChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 526YR6WHWC;
