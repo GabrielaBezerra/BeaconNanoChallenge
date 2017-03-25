@@ -57,6 +57,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return devices.count
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        
+        let cell = UITableViewCell(style: .default, reuseIdentifier: "myCell")
+        cell.textLabel?.text = devices[indexPath.row]
+        
+        return cell
+    }
+    
 }
 
 extension ViewController: CLLocationManagerDelegate {
@@ -68,7 +85,7 @@ extension ViewController: CLLocationManagerDelegate {
         
         
         if((immediateBeacons.count + nearBeacons.count) >= 3){
-            
+            self.viewLoading.isHidden = true
         }
     }
     
@@ -163,22 +180,7 @@ extension ViewController: MCNearbyServiceBrowserDelegate, MCNearbyServiceAdverti
     
 
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return devices.count
-    }
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "myCell")
-        cell.textLabel?.text = devices[indexPath.row]
-        
-        return cell
-    }
+
     
     
 }
