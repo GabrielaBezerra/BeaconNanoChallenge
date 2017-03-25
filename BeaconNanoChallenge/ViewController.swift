@@ -29,6 +29,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         
+
+        
         locationManager.delegate = self
         devicesTable.delegate = self
         devicesTable.dataSource = self
@@ -65,6 +67,10 @@ extension ViewController: CLLocationManagerDelegate {
         if((immediateBeacons.count + nearBeacons.count) >= 3){
             
         }
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
     //Checking all beacons and printing to console
