@@ -14,6 +14,7 @@
 		147846281E83FF790025A0FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147846261E83FF790025A0FA /* LaunchScreen.storyboard */; };
 		147846331E83FF790025A0FA /* BeaconNanoChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147846321E83FF790025A0FA /* BeaconNanoChallengeTests.swift */; };
 		1478463E1E83FF790025A0FA /* BeaconNanoChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1478463D1E83FF790025A0FA /* BeaconNanoChallengeUITests.swift */; };
+		792EA1751E86A1A7000D888A /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792EA1741E86A1A7000D888A /* RoomViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		147846391E83FF790025A0FA /* BeaconNanoChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeaconNanoChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1478463D1E83FF790025A0FA /* BeaconNanoChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconNanoChallengeUITests.swift; sourceTree = "<group>"; };
 		1478463F1E83FF790025A0FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		792EA1741E86A1A7000D888A /* RoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				1478461D1E83FF790025A0FA /* AppDelegate.swift */,
 				1478461F1E83FF790025A0FA /* ViewController.swift */,
+				792EA1741E86A1A7000D888A /* RoomViewController.swift */,
 				147846211E83FF790025A0FA /* Main.storyboard */,
 				147846241E83FF790025A0FA /* Assets.xcassets */,
 				147846261E83FF790025A0FA /* LaunchScreen.storyboard */,
@@ -193,7 +196,7 @@
 				TargetAttributes = {
 					147846191E83FF790025A0FA = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 526YR6WHWC;
+						DevelopmentTeam = 9EGVR395L4;
 						ProvisioningStyle = Automatic;
 					};
 					1478462D1E83FF790025A0FA = {
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				792EA1751E86A1A7000D888A /* RoomViewController.swift in Sources */,
 				147846201E83FF790025A0FA /* ViewController.swift in Sources */,
 				1478461E1E83FF790025A0FA /* AppDelegate.swift in Sources */,
 			);
@@ -415,7 +419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 526YR6WHWC;
+				DEVELOPMENT_TEAM = 9EGVR395L4;
 				INFOPLIST_FILE = BeaconNanoChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Gabriela-Bezerra.BeaconNanoChallenge";
@@ -428,7 +432,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 526YR6WHWC;
+				DEVELOPMENT_TEAM = 9EGVR395L4;
 				INFOPLIST_FILE = BeaconNanoChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Gabriela-Bezerra.BeaconNanoChallenge";
