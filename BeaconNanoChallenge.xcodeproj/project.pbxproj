@@ -193,7 +193,7 @@
 				TargetAttributes = {
 					147846191E83FF790025A0FA = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 9EGVR395L4;
+						DevelopmentTeam = BKWDS645Z7;
 						ProvisioningStyle = Automatic;
 					};
 					1478462D1E83FF790025A0FA = {
@@ -415,7 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9EGVR395L4;
+				DEVELOPMENT_TEAM = BKWDS645Z7;
 				INFOPLIST_FILE = BeaconNanoChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Gabriela-Bezerra.BeaconNanoChallenge";
@@ -429,7 +429,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9EGVR395L4;
+				DEVELOPMENT_TEAM = BKWDS645Z7;
 				INFOPLIST_FILE = BeaconNanoChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Gabriela-Bezerra.BeaconNanoChallenge";

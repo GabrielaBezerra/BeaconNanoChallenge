@@ -11,7 +11,7 @@ import UIKit
 import CoreLocation
 import MultipeerConnectivity
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     
     @IBOutlet weak var viewLoading: UIView!
@@ -23,7 +23,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     //Multipeer
     let peerID = MCPeerID(displayName: UIDevice.current.name)
-    let serviceType = "nano"
+    let serviceType = "room"
+    
+    var browser : MCNearbyServiceBrowser!
+    var advertiser : MCNearbyServiceAdvertiser!
+
+    var advertising = false
     
     let devices = ["Fulano", "Beltrano", "Teobaldo", "Iphone de Derpino", "iPad do Doidim lá", "Sem ideia"]
     
@@ -33,28 +38,27 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         
         showActivityIndicatory(uiView: self.viewLoading)
-        
+        print(self.peerID.displayName)
         locationManager.delegate = self
         devicesTable.delegate = self
         devicesTable.dataSource = self
         
         lblNumberOfDevices.text = "\(devices.count)"
         
+        
+        browser = MCNearbyServiceBrowser(peer: peerID, serviceType: serviceType)
+        browser.delegate = self
+        
+        advertiser = MCNearbyServiceAdvertiser(peer: peerID, discoveryInfo: nil, serviceType: serviceType)
+        advertiser.delegate = self
+
+        
         if (CLLocationManager.authorizationStatus() != CLAuthorizationStatus.authorizedWhenInUse){
             locationManager.requestWhenInUseAuthorization()
         }
         
         locationManager.startRangingBeacons(in: region)
-        
-        
-        // Multipeer
-        let browser = MCNearbyServiceBrowser.init(peer: peerID, serviceType: serviceType)
-        browser.delegate = self
-        
-        let advertiser = MCNearbyServiceAdvertiser.init(peer: peerID, discoveryInfo: nil, serviceType: serviceType)
-        advertiser.delegate = self
-        
-        
+        browser.startBrowsingForPeers()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -76,16 +80,31 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
 }
 
+
 extension ViewController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], in region: CLBeaconRegion) {
         print("beacon ranged")
-        let immediateBeacons = beacons.filter{ $0.proximity == CLProximity.immediate }
-        let nearBeacons      = beacons.filter{ $0.proximity == CLProximity.near }
+        if let view = manager.delegate as? ViewController{
+        
+            let immediateBeacons = beacons.filter{ $0.proximity == CLProximity.immediate }
+            let nearBeacons      = beacons.filter{ $0.proximity == CLProximity.near }
         
         
-        if((immediateBeacons.count + nearBeacons.count) >= 3){
-            self.viewLoading.isHidden = true
+            if((immediateBeacons.count + nearBeacons.count) >= 3){
+                self.viewLoading.isHidden = true
+                if !view.advertising {
+                    print("\(view.peerID.displayName) is now advertising")
+                    view.advertiser.startAdvertisingPeer()
+                    view.advertising = true
+                }
+            }else{
+                if view.advertising{
+                    print("\(view.peerID.displayName) stoped advertising")
+                    view.advertiser.stopAdvertisingPeer()
+                    view.advertising = false
+                }
+            }
         }
     }
     
@@ -167,15 +186,15 @@ extension ViewController: MCNearbyServiceBrowserDelegate, MCNearbyServiceAdverti
     }
     
     func browser(_ browser: MCNearbyServiceBrowser, foundPeer peerID: MCPeerID, withDiscoveryInfo info: [String : String]?) {
-        
+        print("found \(peerID.displayName)")
     }
     
     func browser(_ browser: MCNearbyServiceBrowser, lostPeer peerID: MCPeerID) {
-        
+        print("lost \(peerID.displayName)")
     }
     
     func browser(_ browser: MCNearbyServiceBrowser, didNotStartBrowsingForPeers error: Error) {
-        
+        print("didNotStartBrowsing")
     }
     
 
