@@ -86,6 +86,8 @@ extension ViewController: CLLocationManagerDelegate {
         
         if((immediateBeacons.count + nearBeacons.count) >= 3){
             self.viewLoading.isHidden = true
+        }else{
+            self.viewLoading.isHidden = false
         }
     }
     
