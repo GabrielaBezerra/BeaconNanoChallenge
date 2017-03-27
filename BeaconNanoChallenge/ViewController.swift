@@ -30,7 +30,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     var advertising = false
     
-    let devices = ["Fulano", "Beltrano", "Teobaldo", "Iphone de Derpino", "iPad do Doidim lá", "Sem ideia"]
+    var devices = [String]()
     
     var counter: Int = 0
     
@@ -202,10 +202,20 @@ extension ViewController: MCNearbyServiceBrowserDelegate, MCNearbyServiceAdverti
     
     func browser(_ browser: MCNearbyServiceBrowser, foundPeer peerID: MCPeerID, withDiscoveryInfo info: [String : String]?) {
         print("found \(peerID.displayName)")
+        if let view = browser.delegate as? ViewController{
+            if !view.devices.contains(peerID.displayName){
+                view.devices.append(peerID.displayName)
+            }
+        }
+        
     }
     
     func browser(_ browser: MCNearbyServiceBrowser, lostPeer peerID: MCPeerID) {
         print("lost \(peerID.displayName)")
+        if let view = browser.delegate as? ViewController{
+            view.devices = view.devices.filter{ $0 != peerID.displayName }
+            print(view.devices)
+        }
     }
     
     func browser(_ browser: MCNearbyServiceBrowser, didNotStartBrowsingForPeers error: Error) {
