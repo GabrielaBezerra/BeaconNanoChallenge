@@ -37,7 +37,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        devices.append(peerID.displayName)
         showActivityIndicatory(uiView: self.viewLoading)
         print(self.peerID.displayName)
         locationManager.delegate = self
@@ -79,7 +79,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
+    
+    
 }
+
 
 
 extension ViewController: CLLocationManagerDelegate {
@@ -205,6 +208,8 @@ extension ViewController: MCNearbyServiceBrowserDelegate, MCNearbyServiceAdverti
         if let view = browser.delegate as? ViewController{
             if !view.devices.contains(peerID.displayName){
                 view.devices.append(peerID.displayName)
+                view.devicesTable.reloadData()
+                view.lblNumberOfDevices.text = "\(view.devices.count)"
             }
         }
         
@@ -215,6 +220,8 @@ extension ViewController: MCNearbyServiceBrowserDelegate, MCNearbyServiceAdverti
         if let view = browser.delegate as? ViewController{
             view.devices = view.devices.filter{ $0 != peerID.displayName }
             print(view.devices)
+            view.devicesTable.reloadData()
+            view.lblNumberOfDevices.text = "\(view.devices.count)"
         }
     }
     
