@@ -27,6 +27,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     let devices = ["Fulano", "Beltrano", "Teobaldo", "Iphone de Derpino", "iPad do Doidim lá", "Sem ideia"]
     
+    var counter: Int = 0
     
     
     override func viewDidLoad() {
@@ -83,11 +84,16 @@ extension ViewController: CLLocationManagerDelegate {
         let immediateBeacons = beacons.filter{ $0.proximity == CLProximity.immediate }
         let nearBeacons      = beacons.filter{ $0.proximity == CLProximity.near }
         
-        
-        if((immediateBeacons.count + nearBeacons.count) >= 3){
-            self.viewLoading.isHidden = true
-        }else{
-            self.viewLoading.isHidden = false
+        counter += 1
+        print("oe")
+        if counter == 5{
+            if((immediateBeacons.count + nearBeacons.count) >= 3){
+                self.viewLoading.isHidden = true
+            }else{
+                self.viewLoading.isHidden = false
+            }
+            counter = 0
+            print("falow")
         }
     }
     
